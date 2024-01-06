@@ -1,0 +1,20 @@
+# Test 2024-01-06 at 18:12:43
+
+name: Test
+
+on:
+  push
+
+jobs:
+
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        ref: 'main'
+
+    - name: Vanina
+      run:
+        java MinimumNumberOfInsertions.java
